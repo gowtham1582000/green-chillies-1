@@ -316,7 +316,7 @@
 			var name = document.getElementById("name").value;
 			var mail=document.getElementById("email").value;
 			var address=document.getElementById("address").value;
-			var phone=document.getElementById("number").value;
+			var phone=document.getElementById("phone").value;
 			var note=document.getElementById("notes").value;
 			var products = [];
 			var price2=[]
@@ -362,6 +362,7 @@
 			}
 		}else{
 				alert("Please Fill All the Required Fields or The Cart should not Be Empty")
+				
 			}
 		},
 		

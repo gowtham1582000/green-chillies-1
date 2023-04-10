@@ -29,6 +29,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
 
     <script src="assets/js/jquery.shop.js"></script>
+    <script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script>
+ (function () {
+		emailjs.init("BIoLYEo_fWh2BovfX");
+	})();</script>
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -65,125 +72,7 @@
         <!-- header end -->
 
         <!-- slide-bar start -->
-        <aside class="slide-bar">
-            <div class="close-mobile-menu">
-                <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
-            </div>
-
-            <!-- sidebar-info start -->
-            <div class="cart_sidebar">
-                <h2 class="heading_title text-uppercase">Cart Items - <span>4</span></h2>
-                <div class="cart_items_list">
-                    <div class="cart_item">
-                        <div class="item_image">
-                            <img src="assets/img/shop/cart/img_01.jpg" alt="image_not_found">
-                        </div>
-                        <div class="item_content">
-                            <h4 class="item_title">
-                                Rorem ipsum dolor sit amet.
-                            </h4>
-                            <span class="item_price">$19.00</span>
-                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
-                        </div>
-                    </div>
-                    <div class="cart_item">
-                        <div class="item_image">
-                            <img src="assets/img/shop/cart/img_02.jpg" alt="image_not_found">
-                        </div>
-                        <div class="item_content">
-                            <h4 class="item_title">
-                                Rorem ipsum dolor sit amet.
-                            </h4>
-                            <span class="item_price">$22.00</span>
-                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
-                        </div>
-                    </div>
-                    <div class="cart_item">
-                        <div class="item_image">
-                            <img src="assets/img/shop/cart/img_03.jpg" alt="image_not_found">
-                        </div>
-                        <div class="item_content">
-                            <h4 class="item_title">
-                                Rorem ipsum dolor sit amet.
-                            </h4>
-                            <span class="item_price">$43.00</span>
-                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
-                        </div>
-                    </div>
-                    <div class="cart_item">
-                        <div class="item_image">
-                            <img src="assets/img/shop/cart/img_04.jpg" alt="image_not_found">
-                        </div>
-                        <div class="item_content">
-                            <h4 class="item_title">
-                                Rorem ipsum dolor sit amet.
-                            </h4>
-                            <span class="item_price">$14.00</span>
-                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="total_price text-uppercase">
-                    <span>Sub Total:</span>
-                    <span>$87.00</span>
-                </div>
-                <ul class="btns_group ul_li">
-                    <li><a href="cart.html" class="thm_btn text-uppercase">View Cart</a></li>
-                    <li><a href="checkout.html" class="thm_btn thm_btn-2 text-uppercase">Checkout</a></li>
-                </ul>
-            </div>
-            <!-- sidebar-info end -->
-
-            <!-- side-mobile-menu start -->
-            <nav class="side-mobile-menu">
-                <div class="header-mobile-search">
-                    <form role="search" method="get" action="#">
-                        <input type="text" placeholder="Search Keywords">
-                        <button type="submit"><i class="ti-search"></i></button>
-                    </form>
-                </div>
-                <ul id="mobile-menu-active">
-                    <li class="dropdown"><a href="index.html">Home</a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Home One</a></li>
-                            <li><a href="index-2.html">Home Two</a></li>
-                            <li><a href="index-3.html">Home Three</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="#">Pages</a>
-                        <ul class="sub-menu">
-                            <li><a href="menu.html">Recipe Menu</a></li>
-                            <li><a href="reservation.html">Reservation Form</a></li>
-                            <li><a href="history.html">History</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Shop</a>
-                        <ul class="sub-menu">
-                            <li><a href="shop.html">Shop List</a></li>
-                            <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-                            <li><a href="shop-details.html">Shop Details</a></li>
-                            <li><a href="cart.html">Shop Cart</a></li>
-                            <li><a href="checkout.html">Shop Checkout</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- side-mobile-menu end -->
-        </aside>
-        <div class="body-overlay"></div>
+        
         <!-- slide-bar end -->
 
         <!-- main body end -->
@@ -209,13 +98,7 @@
                        </div>
                    </div>
                 </div>
-                <div class="breadcrumb_icon_wrap">
-                    <div class="container">
-                        <div class="breadcrumb_icon">
-                            <img src="assets/img/icon/bc_icon.png" alt="">
-                        </div>
-                    </div>
-                </div>
+                
             </section>
             <!-- page title end -->
 
@@ -281,84 +164,37 @@
                                     <div class="col-xl-9 col-lg-12">
                                         <form class="form_wrap" action="#">
                                             <div class="row">
-                                                <div class="col-xl-6 col-lg-6">
-                                                    <label for="fname">First Name<span>*</span></label>
-                                                    <input type="text" id="fname" name="fname" placeholder="First Name">
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6">
-                                                    <label for="lname">Last Name<span>*</span></label>
-                                                    <input type="text" id="lname" name="lname" placeholder="Last Name">
-                                                </div>
                                                 <div class="col-xl-12 col-lg-12">
-                                                    <label for="cname">Company name<span>(optional)</span></label>
-                                                    <input type="text" id="cname" name="cname" placeholder="Company name..">
+                                                    <label for="fname">Full Name<span>*</span></label>
+                                                    <input type="text" id="name" name="fname" placeholder="Full Name">
                                                 </div>
+                                                
                                                 <div class="col-xl-12 col-lg-12">
-                                                    <label for="country">Country / Region<span>*</span></label>
-                                                    <div class="filter">
-                                                        <select name="select" id="country">
-                                                            <option value="1">Bangladesh</option>
-                                                            <option value="2">Saudi Arabia</option>
-                                                            <option value="3">United Arab Emirates</option>
-                                                            <option value="4">United Kingdom</option>
-                                                            <option value="5">Pakistan</option>
-                                                            <option value="6">South Africa</option>
-                                                            <option value="7">Morocco</option>
-                                                            <option value="8">New Zealand</option>
-                                                            <option value="9">Netherlands</option>
-                                                            <option value="10">Japan</option>
-                                                        </select>
-                                                    </div>
+                                                    <label for="cname">Email Id<span>*</span></label>
+                                                    <input type="text" id="email" name="cname" placeholder="Email Id">
                                                 </div>
+                                                
                                                 <div class="col-xl-12 col-lg-12">
-                                                    <label for="address">Street address<span>*</span></label>
+                                                    <label for="address">address<span>*</span></label>
                                                     <input type="text" id="address" name="address" placeholder="House number & State">
                                                 </div>
+                                               
+                                               
                                                 <div class="col-xl-12 col-lg-12">
-                                                    <label for="ct">Town / City<span>*</span></label>
-                                                    <input type="text" id="ct" name="ct" placeholder="Town / City">
-                                                </div>
-                                                <div class="col-xl-12 col-lg-12">
-                                                    <label for="dselect">District<span>*</span></label>
-                                                    <div class="filter">
-                                                        <select name="select" id="dselect">
-                                                            <option value="1">Dhaka</option>
-                                                            <option value="2">Faridpur</option>
-                                                            <option value="3">Cumilla</option>
-                                                            <option value="4">Noakhali</option>
-                                                            <option value="5">Rangamati</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-12 col-lg-12">
-                                                    <label for="postcode">Postcode / ZIP<span>(optional)</span></label>
-                                                    <input type="text" id="postcode" name="postcode" placeholder="Postcode/ZIP">
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6">
                                                     <label for="phone">Phone<span>*</span></label>
                                                     <input type="text" id="phone" name="postcode" placeholder="Enter your number...">
                                                 </div>
-                                                <div class="col-xl-6 col-lg-6">
-                                                    <label for="gmail">Gmail<span>*</span></label>
-                                                    <input type="text" id="gmail" name="postcode" placeholder="Enter your mail...">
-                                                </div>
+                                                
                                                 <div class="col-xl-12 col-lg-12">
-                                                    <label for="textarea">Additional Information<span>*</span></label>
-                                                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Note about your order, Special note for delevery !"></textarea>
+                                                    <label for="textarea">Additional Information</label>
+                                                    <textarea name="textarea" id="notes" cols="30" rows="10" placeholder="Note about your order, Special note for delevery !"></textarea>
                                                 </div>
                                             </div>
                                         </form>
+                                        <button id="send-mail" class="thm_btn thm_btn-black"   type="button">Place Order</button><br><br>
+
                                     </div>
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-6 col-12">
-                                            <div class="cart_tutal_wrap">
-                                              
-                                                <div class="text-right">
-                                                    <a class="thm_btn thm_btn-black" href="checkout.html">Procced To Checkout</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
