@@ -705,4 +705,7 @@
 		var shop = new $.Shop( "#site1" );
 	});
 
-})( jQuery );
+})(jQuery);
+
+
+ 
