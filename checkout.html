@@ -25,6 +25,21 @@
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/jquery.shop.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+        </script>
 </head>
 
 <body>
@@ -42,107 +57,11 @@
         <!-- backtotop - end -->
 
         <!-- start Preloader  -->
-        <div class="preloder_part">
-            <div class="spinner">
-                <div class="dot1"></div>
-                <div class="dot2"></div>
-            </div>
-        </div>
+    
         <!-- End Preloader  -->
 
         <!-- header start -->
-        <header class="header_area header_2">
-            <div id="sticky-header" class="header_wrap header_space">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-lg-2 col-6">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo"></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 d-none d-lg-block">
-                            <div class="main_menu_wrap navbar navbar-expand-lg">
-                                <nav class="main_menu collapse navbar-collapse">
-                                    <ul class="main_menu_list ul_li">
-                                        <li class="dropdown">
-                                            <a class="nav-link" href="#">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-3.html">Home Three</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="nav-link" href="about.html">About</a> </li>
-                                        <li class="dropdown">
-                                            <a class="nav-link" href="#">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="menu.html">Recipe Menu</a></li>
-                                                <li><a href="reservation.html">Reservation Form</a></li>
-                                                <li><a href="history.html">History</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown active">
-                                            <a class="nav-link" href="#">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop List</a></li>
-                                                <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
-                                                <li><a href="cart.html">Shop Cart</a></li>
-                                                <li class="active"><a href="checkout.html">Shop Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a class="nav-link" href="#">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a class="nav-link" href="contact.html">Contact</a>
-                                        </li>
-                                      </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="header_right ul_li_right">
-                                <div class="header_carts ul_li">
-                                    <div class="header_search_wrap">
-                                        <div class="icon search_main">
-                                            <i class="fal fa-search"></i>
-                                            <span><i class="fal fa-times"></i></span>
-                                        </div>
-                                        <div class="search_form_main">
-                                            <form role="search" method="get" action="#"> 
-                                                <input type="text" placeholder="Search Keywords"> 
-                                                <button type="submit"><i class="ti-search"></i></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="hamburger_menu">
-                                        <a href="javascript:void(0);">
-                                            <div class="icon cart_btn d-none d-lg-block">
-                                                <i class="fal fa-shopping-basket"></i>
-                                                <small class="cart_counter">04</small>
-                                            </div>
-                                            <div class="icon bar d-lg-none">
-                                                <span><i class="fal fa-bars"></i></span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a class="icon cart_wishlist d-none d-lg-block" href="#">
-                                        <i class="fal fa-heart"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+       <div id="header"></div>
         <!-- header end -->
 
         <!-- slide-bar start -->
@@ -301,12 +220,45 @@
             <!-- page title end -->
 
             <!-- checkout start -->
+            <div id="site">
+      
+                <div id="content">
+                   <h1>Checkout</h1>
+                      <table id="checkout-cart" class="shopping-cart">
+                        <thead>
+                         <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Price</th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                        
+                        </tbody>
+                      </table>
+                    <div id="pricing">
+                      
+                     
+                      
+                      <p id="sub-total">
+                         <strong>Total</strong>: <span id="stotal"></span>
+                      </p>
+                    </div>
+                    
+                   
+                </div>
+                
+                
+             
+             </div>
             <section class="checkout_area pt-120 pb-120">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="checkout_wrap">
-                                <div class="radio_wrap">
+                                <h3>Delivery Details</h3><br><br>
+
+                               <!-- <div class="radio_wrap">
                                     <h3>Payment Method</h3>
                                     <ul>
                                         <li>
@@ -324,7 +276,7 @@
                                             <label for="cash-232-1" id="option-cash"> Cash on Delivery</label>
                                         </li>
                                     </ul>
-                                </div>
+                                </div>-->
                                 <div class="row">
                                     <div class="col-xl-9 col-lg-12">
                                         <form class="form_wrap" action="#">
@@ -400,11 +352,7 @@
                                     <div class="row">
                                         <div class="col-xl-6 col-lg-6 col-12">
                                             <div class="cart_tutal_wrap">
-                                                <h3 class="title">Cart Totals</h3>
-                                                <ul>
-                                                    <li>Subtotal <span>$70</span></li>
-                                                    <li>total <span>$70</span></li>
-                                                </ul>
+                                              
                                                 <div class="text-right">
                                                     <a class="thm_btn thm_btn-black" href="checkout.html">Procced To Checkout</a>
                                                 </div>
@@ -420,163 +368,13 @@
             <!-- checkout end -->
 
             <!-- brand start -->
-            <section class="brand_area white_bg">
-                <div class="container-fluid">
-                    <div class="row g-0 justify-content-center">
-                        <div class="col-lg-2 col-md-3 col-sm-6 b_border">
-                            <div class="brand_img">
-                                <img src="assets/img/brand/brand_01.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 b_border">
-                            <div class="brand_img">
-                                <img src="assets/img/brand/brand_02.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 b_border">
-                            <div class="brand_img">
-                                <img src="assets/img/brand/brand_03.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 b_border">
-                            <div class="brand_img">
-                                <img src="assets/img/brand/brand_04.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 b_border">
-                            <div class="brand_img">
-                                <img src="assets/img/brand/brand_05.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 b_border">
-                            <div class="brand_img">
-                                <img src="assets/img/brand/brand_06.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             <!-- brand end -->
         </main>
         <!-- main body end -->
 
-        <!-- footer start -->
-        <footer class="footer-area footer_bg">
-            <div class="footer_top pt-120">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 col-md-6">
-                            <div class="sub_text">
-                                <h3>Subscribe NEws Latter</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-6">
-                            <form class="sub_from" action="#">
-                                <input type="text" placeholder="Enter Your Mail">
-                                <button>Subscribe Now</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_main pt-100 pb-50">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="footer_widget">
-                                <h3>About Frudbaz</h3>
-                                <p>Lorem ipsum dolor sit consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <div class="open_hour_wrap ul_li">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/t_hour.png" alt="">
-                                    </div>
-                                    <div class="or_text">
-                                        <h4>Opening HOurs</h4>
-                                        <span>Mon - Sat (8:00 - 6:00)</span>
-                                        <span>Sunday - Closed</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer_widget">
-                                <h3>Contact us</h3>
-                                <ul class="c_wrap">
-                                    <li><span>Address</span>: 8638 Amarica Stranfod Mailbon Star</li>
-                                    <li><span>Mail</span>: support@example.com</li>
-                                    <li><span>Phone</span>: +7464 0187 3535 645</li>
-                                    <li><span>Fax id</span>: +9 659459 49594</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6">
-                            <div class="footer_widget footer_link">
-                                <h3>Links</h3>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">Faq</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer_widget widget_blog">
-                                <h3>Recent Blog</h3>
-                                <ul class="widget_post">
-                                    <li>
-                                        <div class="post_thumb">
-                                            <a href="blog-details.html"><img src="assets/img/blog/widget-post/img_01.jpg" alt=""></a>
-                                        </div>
-                                        <div class="content">
-                                            <h6><a href="blog-details.html">Best Smell of Americano Coffee Trins</a></h6>
-                                            <span class="date">December 30 - 2021</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="post_thumb">
-                                            <a href="blog-details.html"><img src="assets/img/blog/widget-post/img_02.jpg" alt=""></a>
-                                        </div>
-                                        <div class="content">
-                                            <h6><a href="blog-details.html">Best Smell of Americano Coffee Trins</a></h6>
-                                            <span class="date">January 03 - 2021</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <div class="container">
-                    <div class="copyright_wrap">
-                        <div class="row align-items-center">
-                            <div class="col-lg-3 col-md-3">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo_white.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-9">
-                                <div class="copyright text-md-center">
-                                    <p>Copyright@ Example 2021.Design By XpressRow</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-12">
-                                <div class="social_links text-lg-end">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <!--  footer start -->
+       <div id="footer"></div>
         <!-- footer end -->
 
     </div>
