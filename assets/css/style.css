@@ -275,20 +275,20 @@ input, textarea, select {
 	position: relative;
 	color: #fefefe;
 	text-transform: uppercase;
-	background: #ff8e28;
+	background: red;
 	font-weight: 700;
 	display: inline-block;
 	border-radius: 10px;
 }
 .thm_btn:hover {
     color: #ffff;
-    background-color: #00a850;
+    background-color: darkred;
 }
 .thm_btn-2 {
-    background-color: #00a850;
+    background-color: green;
 }
 .thm_btn-2:hover {
-    background-color: #ff8e28;
+    background-color: darkgreen;
 }
 .thm_btn-white, .thm_btn-white:hover {
 	background-color: #fff;
