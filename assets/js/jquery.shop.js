@@ -33,9 +33,9 @@
 			this.currency = "&#8377;"; // HTML entity of the currency to be displayed in the layout
 			this.currencyString = "₹"; // Currency symbol as textual string
 			this.paypalCurrency = "EUR"; // PayPal's currency code
-			$("#send-mail").on("click", function(event) {
+			$("#send-mail").on("click", function() {
 				// Call the sendmail function here
-				event.preventDefault(); // prevent the form from submitting
+				
 				var shop = new $.Shop();
 				shop.sendmail();
 			});			 // The URL of the PayPal's form
