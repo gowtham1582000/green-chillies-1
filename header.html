@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/main.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +39,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-2 col-6">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/green-chilles-logo.png" alt="logo"></a>
+                                <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
                             </div>
                         </div>
                         <div class="col-lg-10 col-6">
@@ -45,7 +47,7 @@
                                 <nav class="main_menu collapse navbar-collapse">
                                     <ul class="main_menu_list ul_li">
                                         <li class="dropdown active">
-                                            <a class="nav-link" href="#">Home</a>
+                                            <a class="nav-link" href="index.html">Home</a>
                                             <!--<ul class="sub-menu">
                                                 <li class="active"><a href="index.html">Home One</a></li>
                                                 <li><a href="index-2.html">Home Two</a></li>
@@ -54,8 +56,8 @@
                                         </li>
                                         <li><a class="nav-link" href="about.html">About</a> </li>
                                         
-                                        <li class="dropdown">
-                                            <a class="nav-link" href="#">Delecious Menu</a>
+                                        <li>
+                                            <a class="nav-link" href="menu.html">Delecious Menu</a>
                                             <!--<ul class="sub-menu">
                                                 <li><a href="menu.html">Shop List</a></li>
                                                 <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
@@ -93,5 +95,100 @@
                 </div>
             </div>
         </header>
+        <aside class="slide-bar">
+            <div class="close-mobile-menu">
+                <a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+            </div>
+
+            <!-- sidebar-info start -->
+            <div class="cart_sidebar">
+                <h2 class="heading_title text-uppercase">Cart Items - <span>4</span></h2>
+                <div class="cart_items_list">
+                    <div class="cart_item">
+                        <div class="item_image">
+                            <img src="assets/img/shop/cart/img_01.jpg" alt="image_not_found">
+                        </div>
+                        <div class="item_content">
+                            <h4 class="item_title">
+                                Rorem ipsum dolor sit amet.
+                            </h4>
+                            <span class="item_price">$19.00</span>
+                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="item_image">
+                            <img src="assets/img/shop/cart/img_02.jpg" alt="image_not_found">
+                        </div>
+                        <div class="item_content">
+                            <h4 class="item_title">
+                                Rorem ipsum dolor sit amet.
+                            </h4>
+                            <span class="item_price">$22.00</span>
+                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="item_image">
+                            <img src="assets/img/shop/cart/img_03.jpg" alt="image_not_found">
+                        </div>
+                        <div class="item_content">
+                            <h4 class="item_title">
+                                Rorem ipsum dolor sit amet.
+                            </h4>
+                            <span class="item_price">$43.00</span>
+                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="item_image">
+                            <img src="assets/img/shop/cart/img_04.jpg" alt="image_not_found">
+                        </div>
+                        <div class="item_content">
+                            <h4 class="item_title">
+                                Rorem ipsum dolor sit amet.
+                            </h4>
+                            <span class="item_price">$14.00</span>
+                            <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="total_price text-uppercase">
+                    <span>Sub Total:</span>
+                    <span>$87.00</span>
+                </div>
+                <ul class="btns_group ul_li">
+                    <li><a href="cart.html" class="thm_btn text-uppercase">View Cart</a></li>
+                    <li><a href="checkout.html" class="thm_btn thm_btn-2 text-uppercase">Checkout</a></li>
+                </ul>
+            </div>
+            <!-- sidebar-info end -->
+
+            <!-- side-mobile-menu start -->
+            <nav class="side-mobile-menu">
+                
+                <ul id="mobile-menu-active">
+                    <li><a href="index.html">Home</a>
+                        
+                    </li>
+                    <li><a class="nav-link" href="about.html">About</a> </li>
+                    <li>
+                        <a class="nav-link" href="menu.html">Delecious Menu</a>
+                        <!--<ul class="sub-menu">
+                            <li><a href="menu.html">Shop List</a></li>
+                            <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Shop Cart</a></li>
+                            <li><a href="checkout.html">Shop Checkout</a></li>
+                        </ul>-->
+                    </li>
+                    
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- side-mobile-menu end -->
+        </aside>
+        <div class="body-overlay"></div>
     </div>   
 </body>    
