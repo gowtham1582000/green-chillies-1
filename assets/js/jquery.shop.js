@@ -327,7 +327,6 @@
 			  var product = item.product;
 			  var price = item.price;
 			  var qty = item.qty;
-			
 			  var productString = product;
 			  var price1 = price;
 			  var quantity = qty;
