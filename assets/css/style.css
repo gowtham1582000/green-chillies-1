@@ -144,6 +144,22 @@ h6 {
     font-style: normal;
     font-weight: 400;
 }
+@media only screen and (max-width: 600px) {
+	h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lilita One', cursive;
+    font-weight: normal;
+    color: #1e1d23;
+    
+    font-style: normal;
+    font-weight: 400;
+}
+	
+  }
 
 h1 a,
 h2 a,
